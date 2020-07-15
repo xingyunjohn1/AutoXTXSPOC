@@ -128,15 +128,16 @@ div/section[1]/div[2]/div[1]/div/div/div[1]/div[2]/span[1]'
     rawvlen = driver.find_element_by_xpath(lenpath) #.text
     vlen = rawvlen.get_attribute('textContent')
     print(vlen)
-    i = 2
-    while i > 0:
+    j = 2
+    while j > 0:
         while True:
             try:
                 ed = driver.find_element_by_xpath(pedpath).get_attribute('text\
     Content')
                 if ed == vlen:
                     print('finished')
-                    i -= 1
+                    j -= 1
+                    sleep(3) 
                     break
             except:continue
     #edEC = EC.text_to_be_present_in_element((By.XPATH,pedpath),vlen)
