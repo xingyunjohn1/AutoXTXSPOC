@@ -6,7 +6,6 @@ from selenium.webdriver.common.by import By
 from time import sleep, strptime, mktime
 from os import popen
 from itertools import count
-#该版本不完整，请跳到03版——思路修改
 '''首次使用先启动浏览器
 chromedir = 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
 port = 9222
